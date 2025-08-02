@@ -1,0 +1,216 @@
+.App {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+/* Custom styles for the MediConnect system */
+.navbar-brand {
+  font-weight: bold;
+}
+
+/* Navbar link hover effects */
+.navbar-nav .nav-link {
+  transition: color 0.3s ease, transform 0.2s ease;
+  position: relative;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffbe0b !important;
+  transform: translateY(-1px);
+}
+
+/* Dropdown menu hover effects */
+.dropdown-item {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #1a2238 !important;
+  color: #ffbe0b !important;
+}
+
+/* Logout button special hover effect */
+.dropdown-item button:hover {
+  background-color: #ffbe0b !important;
+  color: #1a2238 !important;
+}
+
+/* Navbar brand hover effect */
+.navbar-brand:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.card {
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Custom button hover effects */
+.btn {
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Gold button style */
+.btn-gold {
+  background-color: #ffbe0b;
+  border-color: #ffbe0b;
+  color: #1a2238;
+  font-weight: 600;
+}
+
+.btn-gold:hover {
+  background-color: #1a2238;
+  border-color: #1a2238;
+  color: #ffbe0b;
+}
+
+/* Navy button style */
+.btn-navy {
+  background-color: #1a2238;
+  border-color: #1a2238;
+  color: #ffbe0b;
+  font-weight: 600;
+}
+
+.btn-navy:hover {
+  background-color: #ffbe0b;
+  border-color: #ffbe0b;
+  color: #1a2238;
+}
+
+.badge {
+  font-size: 0.75rem;
+}
+
+/* Custom form styles */
+.form-control:focus,
+.form-select:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+/* Loading spinner */
+.spinner-border {
+  color: #0d6efd;
+}
+
+/* Alert styles */
+.alert {
+  border-radius: 0.5rem;
+}
+
+/* Doctor card styles */
+.doctor-card {
+  border: none;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.doctor-card:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* Appointment card styles */
+.appointment-card {
+  border-left: 4px solid #0d6efd;
+}
+
+.appointment-card.pending {
+  border-left-color: #ffc107;
+}
+
+.appointment-card.confirmed {
+  border-left-color: #0d6efd;
+}
+
+.appointment-card.completed {
+  border-left-color: #198754;
+}
+
+.appointment-card.cancelled {
+  border-left-color: #dc3545;
+}
+
+/* Profile styles */
+.profile-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0d6efd;
+  color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .card-body {
+    padding: 1rem;
+  }
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Status badge colors */
+.badge.bg-warning {
+  color: #000;
+}
+
+.badge.bg-primary {
+  color: #fff;
+}
+
+.badge.bg-success {
+  color: #fff;
+}
+
+.badge.bg-danger {
+  color: #fff;
+}
+
+.badge.bg-secondary {
+  color: #fff;
+}
